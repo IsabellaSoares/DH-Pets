@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>CoLearning - DH Pets</title>
+</head>
+
+<body>
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">DH Pets</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#dhItems"
+          aria-controls="dhItems" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="dhItems">
+          <ul class="navbar-nav">
+            <li class="nav-item" id="nav-link-banner">
+              <a class="nav-link" aria-current="page">Inicio da página</a>
+            </li>
+            <li class="nav-item" id="nav-link-gatos">
+              <a class="nav-link">Gatos</a>
+            </li>
+            <li class="nav-item" id="nav-link-cachorros">
+              <a class="nav-link">Cachorros</a>
+            </li>
+            <li class="nav-item" id="nav-link-fale-conosco">
+              <a class="nav-link">Fale conosco</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="d-flex flex-column justify-content-center align-items-center" id="banner">
+      <h1>DH Pets</h1>
+      <p>Encontre o seu favorito!</p>
+    </section>
+    <section id="section-gatos" class="card-grid container text-center">
+      <h2>Gatos</h2>
+      <div class="row">
+        <div class="card-pet mb-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="image-container">
+            <img src="https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=90"
+              alt="Gato laranja">
+          </div>
+          <h3>Laranjinha</h3>
+          <a href="#" target="_blank">
+            <button class="btn btn-danger">Saiba mais</button>
+          </a>
+        </div>
+        <div class="card-pet mb-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="image-container">
+            <img src="https://static.natgeo.pt/files/styles/image_3200/public/75552.ngsversion.1422285553360.webp"
+              alt="Gato cinza">
+          </div>
+          <h3>Cinzento</h3>
+          <a href="#" target="_blank">
+            <button class="btn btn-danger">Saiba mais</button>
+          </a>
+        </div>
+        <div class="card-pet mb-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="image-container">
+            <img src="https://www.petz.com.br/blog/wp-content/uploads/2022/08/como-acalmar-gato-com-medo-de-fogos2.jpg"
+              alt="Gato preto">
+          </div>
+          <h3>Mauro</h3>
+          <a href="#" target="_blank">
+            <button class="btn btn-danger">Saiba mais</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-cachorros" class="card-grid container text-center">
+      <h2>Cachorros</h2>
+      <div class="row">
+        <div class="card-pet mb-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="image-container">
+            <img src="https://www.petz.com.br/blog/wp-content/uploads/2019/05/cachorro-independente-1.jpg"
+              alt="cachoro amarelo grande">
+          </div>
+          <h3>Max</h3>
+          <a href="#" target="_blank">
+            <button class="btn btn-danger">Saiba mais</button>
+          </a>
+        </div>
+        <div class="card-pet mb-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="image-container">
+            <img src="https://saude.abril.com.br/wp-content/uploads/2018/12/cachorro-livro.png"
+              alt="Cachorro amarelo pequeno">
+          </div>
+          <h3>Brutus</h3>
+          <a href="#" target="_blank">
+            <button class="btn btn-danger">Saiba mais</button>
+          </a>
+        </div>
+        <div class="card-pet mb-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="image-container">
+            <img
+              src="https://www.petz.com.br/blog/wp-content/uploads/2020/07/raca-de-cachorro-muito-popular-no-brasil-3-1280x720.jpg"
+              alt="Cachorro preto pequeno">
+          </div>
+          <h3>José</h3>
+          <a href="#" target="_blank">
+            <button class="btn btn-danger">Saiba mais</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-fale-conosco" class="card-grid container text-center d-none">
+      <h2>Fale conosco</h2>
+      <div class="row">
+        <div class="mb-4 col-md-4 col-sm-6 col-xs-12 mx-auto">
+          <form>
+            <div class="mb-3">
+              <label for="input-email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="input-email" autocomplete="off">
+            </div>
+            <div class="mb-3">
+              <label for="input-nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="input-nome" autocomplete="off">
+            </div>
+            <button type="submit" id="botao-submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-secreta" class="card-grid container text-center">
+      <h2 id="section-secreta-titulo"></h2>
+      <div class="row">
+        <div class="mb-4 col-md-4 col-sm-6 col-xs-12 mx-auto" id="conteudo-secreto">
+          <form>
+            <div class="mb-3">
+              <label for="input-secreto" class="form-label">Qual é o nome da estagiária da Assis. Isa?</label>
+              <input type="text" class="form-control" id="input-secreto" autocomplete="off">
+            </div>
+            <button type="submit" id="botao-secreto" class="btn btn-primary">Revelar segredo</button>
+            <p id="mensagem-erro"></p>
+          </form>
+        </div>
+      </div>
+      <canvas id="my-canvas"></canvas>
+    </section>
+  </main>
+
+  <footer id="footer" class="d-flex flex-wrap justify-content-center">
+    <div class="container">
+      <h3>DH Pets</h3>
+      <p>DH Pets - Todos os direitos reservados</p>
+      <p id="mensagem-footer"></p>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+  <!-- Javascript files -->
+  <script src="js/main.js"></script>
+  <script src="js/confettis.min.js"></script>
+</body>
+</html>
