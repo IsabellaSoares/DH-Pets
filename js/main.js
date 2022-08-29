@@ -90,18 +90,22 @@ botaoSubmit.addEventListener('click', function (event) {
     console.log('Nome >>', inputNome.value);
 
     // Aqui você mostra a seção secreta
+    document.getElementById('section-secreta').style.display = 'block';
  
     document.getElementById('section-secreta-titulo').innerHTML = `Oi, ${nome.value}! Você encontrou a sessão secreta!!`
 });
 
 // Aqui você deve pegar o botao-secreto (lembre-se que o nome dele deve ser botaoSecreto para o código abaixo funcionar)
+const botaoSecreto = document.getElementById('botao-secreto');
  
 botaoSecreto.addEventListener('click', function (event) {
     event.preventDefault();
  
     // Aqui você deverá pegar o input-secreto
+    const inputSecreto = document.getElementById('input-secreto');
  
     // Aqui você deverá pegar a mensagem-erro
+    const mensagemErro = document.getElementById('mensagem-erro');
  
     if (inputSecreto.value.toLowerCase() === String.fromCodePoint(97, 117, 114, 111, 114, 97)) {
         mensagemErro.innerHTML = "";
